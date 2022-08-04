@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .m-box{
+            position: relative;
+            height: 360px;
+            width: 230px;
+            box-shadow: 0px 0px 5px #dddddd;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        .m-box .header-img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 90px;
+            width: 100%;
+            background-color: orangered;
+            padding: 5px;
+        }
+        .m-box .header-img h1{
+            color: #fff;
+            font-size:15px;
+            text-align: center;
+            font-family: system-ui;
+            letter-spacing: 0.5px;
+        }
+        .m-box .header-img img{
+            position: absolute;
+            bottom: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 100px;
+            width: 100px;
+            clip-path: circle(50% at 50% 50%);
+        }
+        .m-box .header-img::before{
+            content: '';
+            position: absolute;
+            bottom: -55px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 100px;
+            width: 100px;
+            border: 5px solid #fff;
+            border-radius: 65px;
+        }
+        .m-box .details{
+            position: relative;
+            top: 160px;
+            height: 25px;
+            width: 100%;
+            margin: 5px 0;
+            font-family: system-ui;
+            font-size: 11px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .m-box .details div{
+            height: 100%;
+            width: 60%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 5px;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+        .m-box .details div:first-child{
+            width: 40%;
+        }
+        .m-box .footer{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 30px;
+            width: 100%;
+            background-color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <div class="m-box">
+        <div class="header-img">
+            <h1>APS UNIVERSITY REWA</h1>
+            <img src="2.jpg">
+        </div>
+        <div class="details">
+            <div>Name :</div>
+            <div>fgbdf</div>
+        </div>
+        <div class="details">
+            <div>Father's Name :</div>
+            <div>erfewr</div>
+        </div>
+        <div class="details">
+            <div>Phone :</div>
+            <div></div>
+        </div>
+        <div class="details">
+            <div>Address :</div>
+            <div></div>
+        </div>
+        <div class="details">
+            <div>Expire Date :</div>
+            <div></div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>
